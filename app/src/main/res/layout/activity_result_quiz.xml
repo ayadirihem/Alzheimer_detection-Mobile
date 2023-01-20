@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultQuiz">
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="392dp"
+        android:layout_height="123dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0sp"
+        android:layout_marginEnd="-9dp"
+        android:layout_marginRight="-9dp"
+        android:layout_marginBottom="500dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:text="Results"
+        android:textColor="@color/darkTextColoor"
+        android:textSize="40sp"
+        android:textStyle="italic|bold" />
+
+    <LinearLayout
+        android:layout_below="@+id/sucessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/correctAnswers"
+            android:text="Correct Answer :0"
+            android:textStyle="bold"
+            android:textColor="#00C853"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incorrectAnswers"
+            android:text="Worng Answer :0"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:textColor="#DD2C00"
+            />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score :0"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score :0"
+            android:visibility="visible"
+            android:textColor="#DD2C00"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="198dp"
+        android:layout_height="213dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="462dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/bg"></ImageView>
+
+    <TextView
+        android:id="@+id/sucessTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/startNewQuiz"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="72dp"
+        android:gravity="center"
+        android:text="You've successfully completed a Alzheimer's Test"
+        android:textColor="#18277C"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startNewQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="467dp"
+        android:background="@drawable/et_border"
+        android:text="Start New Test"
+        android:textColor="#DC487A" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/darkTextColor"
+        app:itemTextColor="@drawable/sellector"
+        app:itemIconTint="@drawable/sellector"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

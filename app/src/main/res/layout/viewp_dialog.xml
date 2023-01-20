@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/viewParent.headerText"
+        android:layout_margin="40dp"
+        android:text="Patient Name: A"/>
+
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector"
+        android:isScrollContainer="true"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+
+                android:id="@+id/title1"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:background="@color/darkTextColor"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginLeft="55dp"
+                android:textSize="20dp"
+                android:id="@+id/age_p"
+                android:text="22"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+
+                android:id="@+id/title2"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="EDUC"
+                android:gravity="center"
+                android:background="@color/darkTextColor"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginLeft="55dp"
+                android:textSize="20dp"
+                android:id="@+id/educ_v"
+                android:text="22"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+
+                android:id="@+id/title3"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="SES"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/darkTextColor"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/ses_v"
+                android:layout_marginLeft="55dp"
+                android:textSize="20dp"
+                android:text="22"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+
+                android:id="@+id/title4"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="MMSE"
+                android:gravity="center"
+                android:background="@color/darkTextColor"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/mmse_v"
+                android:layout_marginLeft="55dp"
+                android:textSize="20dp"
+                android:text="22"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+
+                android:id="@+id/title5"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="eTIV"
+                android:background="@color/darkTextColor"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/eTIV_v"
+                android:layout_marginLeft="55dp"
+                android:textSize="20dp"
+                android:text="22"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+
+                android:id="@+id/title6"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="nWBV"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/darkTextColor"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/nwbv_v"
+                android:layout_marginLeft="55dp"
+                android:textSize="20dp"
+                android:text="22"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+
+                android:id="@+id/title8"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="ASF"
+                android:gravity="center"
+                android:background="@color/darkTextColor"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/asf_v"
+                android:layout_marginLeft="55dp"
+                android:textSize="20dp"
+                android:text="22"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+
+                android:id="@+id/title9"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:background="@color/darkTextColor"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/gend_v"
+                android:layout_marginLeft="55dp"
+                android:textSize="20dp"
+                android:text="F"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/themeColor"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_marginLeft="55dp"
+                android:gravity="center"
+                android:text="Prediction :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="55dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/predct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkTextColor"
+                android:background="@color/themeColor"
+                android:text="Converted"/>
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

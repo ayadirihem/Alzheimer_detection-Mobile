@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateForm"
+    android:layout_gravity="center"
+    android:background="@color/darkTextColor"
+    android:focusableInTouchMode="true"
+    android:gravity="center">
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/viewParent.headerText"
+        android:layout_width="239dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="642dp"
+        android:gravity="center"
+        android:text="Update form"
+        android:textColor="@color/white" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:id="@+id/form2"
+        android:layout_height="629dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="18dp"
+        app:cardCornerRadius="20dp" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin">
+                    <EditText
+                        android:id="@+id/PatientNameUp"
+                        style="@style/UpdateEditText"
+                        android:hint="Person Name"
+                        android:inputType="text"
+                        android:maxLines="1"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                    <RadioGroup
+                        style="@style/parent"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <RadioButton
+                            android:id="@+id/radio_Male_Up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="male" />
+
+                        <RadioButton
+                            android:id="@+id/radio_Female_Up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="female" />
+                    </RadioGroup>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginRight="20dp">
+
+                    <EditText
+                        android:id="@+id/AgePerson_Up"
+                        style="@style/UpdateEditText"
+                        android:hint="Person Age"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginRight="20dp">
+
+                    <EditText
+                        android:id="@+id/EDUCPatient_UP"
+                        style="@style/UpdateEditText"
+                        android:hint="EDUC (Years of Education)"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginRight="20dp">
+
+                    <EditText
+                        android:id="@+id/SESPatient_UP"
+                        style="@style/UpdateEditText"
+                        android:hint="SES (Socioeconomic Status / 1-5)"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginRight="20dp">
+
+                    <EditText
+                        android:id="@+id/MMSEPatient_UP"
+                        style="@style/UpdateEditText"
+                        android:hint="MMSE (Mini Mental State Examination)"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginRight="20dp">
+
+                    <EditText
+                        android:id="@+id/CDRPatient_UP"
+                        style="@style/UpdateEditText"
+                        android:hint="CDR (Clinical Dementia Rating)"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginRight="20dp">
+
+                    <EditText
+                        android:id="@+id/eTIVPatient_UP"
+                        style="@style/UpdateEditText"
+                        android:hint="eTIV(Estimated total intracranial volume)"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginRight="20dp">
+
+                    <EditText
+                        android:id="@+id/nWBVPatient_UP"
+                        style="@style/UpdateEditText"
+                        android:hint="nWBV (Normalize Whole Brain Volume)"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginRight="20dp">
+
+                    <EditText
+                        android:id="@+id/ASFPatient_UP"
+                        style="@style/UpdateEditText"
+                        android:hint="ASF (Atlas Scaling Factor)"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/PredictBtnUpdate"
+                    android:background="@color/darkTextColor"
+                    android:textColor="@color/white"
+                    android:text="Submit"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:shadowRadius="@integer/material_motion_duration_long_1" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/ReturnHomeU"
+        android:layout_width="37dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:clickable="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="362dp"
+        android:layout_marginBottom="45dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24" />
+
+</RelativeLayout>

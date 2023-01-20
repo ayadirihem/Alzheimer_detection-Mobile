@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "395181983339",
+    "firebase_url": "https://alzheimer--detection-default-rtdb.firebaseio.com",
+    "project_id": "alzheimer--detection",
+    "storage_bucket": "alzheimer--detection.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395181983339:android:8fccca0730a1d024af532e",
+        "android_client_info": {
+          "package_name": "com.example.alzheimer_detection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395181983339-pb3q8af3u81e7n9ep7afao7udaikoq7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU1wBFETZiDsDAhDqb3_31tnFwd8Nuatg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395181983339-pb3q8af3u81e7n9ep7afao7udaikoq7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
